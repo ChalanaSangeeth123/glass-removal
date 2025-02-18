@@ -1,0 +1,52 @@
+/* src/pages/UploadPage.css */
+
+/* Upload Page Styles */
+.upload-page {
+    background: #161b22;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .upload-page h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#58a6ff, #f78166);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .upload-page p {
+    font-size: 1.2rem;
+    color: #c9d1d9;
+    margin-bottom: 30px;
+  }
+  
+  .upload-page .file-input {
+    background: #58a6ff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-page .file-input:hover {
+    background-color: #f78166;
+  }
+  
+  .upload-page .preview-container {
+    margin-top: 30px;
+  }
+  
+  .upload-page .preview-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
