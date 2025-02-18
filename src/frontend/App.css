@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and HTML Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; 
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 9999;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('/src/frontend/images/image1.jpg'); /* Path from public folder */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+
+/* About Us Section Styles */
+.about-us {
+  background: linear-gradient(to right, #0d1117, #161b22);
+  color: #fff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+}
+
+.about-us .container {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-us .content {
+  max-width: 600px;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #58a6ff; /* Accent color */
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #c9d1d9;
+  padding: 0 20px; /* Equal padding for left and right */
+  max-width: 800px; /* Optional: Set a max-width to control line length */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.about-us .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-us .image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Add subtle fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-us h2, .about-us p {
+  animation: fadeIn 1s ease-out;
+}
+
+.about-us .content .image-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-us .content, .about-us .image-container {
+    width: 100%;
+  }
+  .about-us p {
+    padding: 0 10px; /* Adjust padding for mobile */
+  }
+}
+
+/* Gradient Text for Section Titles (Input and Output Images) */
+.upload-section h2 {
+font-size: 2.5rem;
+font-weight: bold;
+background: -webkit-linear-gradient(#58a6ff, #f78166);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 20px;
+}
+/* Text and Button Styles inside Hero */
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#58a6ff, #f78166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #c9d1d9;
+}
+
+.hero button {
+  background: linear-gradient(90deg, #58a6ff, #f78166);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #f78166, #58a6ff);
+}
+
+/* Upload Section Styles */
+.upload-section {
+  background: linear-gradient(to right, #0d1117, #161b22); /* Matching background */
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.upload-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  background: linear-gradient(90deg, #58a6ff, #f78166);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.upload-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #f78166, #58a6ff);
+}
+
+.app-wrapper {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.content-wrapper {
+flex: 1 0 auto;
+}
+
+footer {
+flex-shrink: 0;
+}
