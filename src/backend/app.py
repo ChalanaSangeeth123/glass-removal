@@ -36,7 +36,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
 try:
-    generator = tf.keras.models.load_model('glasses_to_no_glasses_v2.h5')
+    generator = tf.keras.models.load_model('glasses_to_no_glasses.h5')
     print("CycleGAN model loaded successfully.")
 except Exception as e:
     print(f"Error loading model: {e}")
